@@ -9,7 +9,7 @@ from tictactoe import PLAYER2
 
 AI_NAME = 'DEEP THOUGHT'
 
-def get_best_move(player, opponent, board, verbose=False):
+def get_best_move(player, opponent, board):
     moves = board.get_moves(player)
     return choice(moves)
 
