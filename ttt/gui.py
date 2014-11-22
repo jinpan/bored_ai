@@ -69,8 +69,6 @@ class TTTGui(Frame):
                     text.set('')
                 else:
                     text.set(piece.player)
-            print move
-            print self.state['board']
 
         def check_queue():
             try:
@@ -86,7 +84,6 @@ class TTTGui(Frame):
             update_status()
             text = button_texts[3 * row + col]
             text.set(move.player)
-            print self.state['board']
 
         def get_next_move(state, queue):
             move = get_best_move(
